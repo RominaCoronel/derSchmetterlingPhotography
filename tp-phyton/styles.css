@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.galeria {
+    display: flex;
+    width: 900px; /* Ajusta el ancho total de la galería según tus necesidades */
+    animation: deslizar 10s infinite; /* 10s es el tiempo de duración de la animación, ajusta según tus preferencias */
+}
+
+.imagen {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    transition: transform 0.5s; /* Controla la velocidad de deslizamiento */
+}
+
+@keyframes deslizar {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
